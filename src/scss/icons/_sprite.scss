@@ -1,0 +1,124 @@
+%svg-common {
+	background: url("sprite.svg") no-repeat;
+}
+
+.arrow-bottom {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.arrow-bottom-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.arrow-first {
+	@extend %svg-common;
+	background-position: 33.333333333333336% 0;
+}
+
+.arrow-first-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.arrow-left {
+	@extend %svg-common;
+	background-position: 0 50%;
+}
+
+.arrow-left-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.arrow-right {
+	@extend %svg-common;
+	background-position: 33.333333333333336% 50%;
+}
+
+.arrow-right-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.circle-bottom {
+	@extend %svg-common;
+	background-position: 66.66666666666667% 0;
+}
+
+.circle-bottom-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.circle-first {
+	@extend %svg-common;
+	background-position: 66.66666666666667% 50%;
+}
+
+.circle-first-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.circle-left {
+	@extend %svg-common;
+	background-position: 0 100%;
+}
+
+.circle-left-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.circle-right {
+	@extend %svg-common;
+	background-position: 33.333333333333336% 100%;
+}
+
+.circle-right-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.clock {
+	@extend %svg-common;
+	background-position: 66.66666666666667% 100%;
+}
+
+.clock-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.envelop {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.envelop-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.location {
+	@extend %svg-common;
+	background-position: 100% 50%;
+}
+
+.location-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.phone {
+	@extend %svg-common;
+	background-position: 100% 100%;
+}
+
+.phone-dims {
+	width: 52px;
+	height: 52px;
+}
+
