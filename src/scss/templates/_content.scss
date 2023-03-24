@@ -28,7 +28,7 @@ section.content {
 	color: $accent;
 }
 
-.content__descr {
+.content__description{
 	position: inherit;
 	top: 0;
 	left: 0;
@@ -36,7 +36,7 @@ section.content {
 	text-align: center;
 }
 
-.content__descr p {
+.content__description p {
 	text-align: center;
 	font-size: calc(10px + 28 * (100vw / 1920));
 	line-height: 155%;
@@ -51,7 +51,7 @@ section.content {
 	left: 0;
 	width: 100%;
 	height: auto;
-
+display: flex;
 	flex-direction: column;
 }
 
@@ -63,15 +63,8 @@ section.content {
 
 }
 
-.slider-content {
-	position: relative;
-	top: 0;
-	left: 0;
-	display: flex;
-	flex-direction: row;
-	padding-bottom: 3%
-}
-
+.slider-content,
+.slider-content-three,
 .slider-content-two{
 	position: relative;
 	top: 0;
@@ -111,12 +104,15 @@ img.content-images {
 }
 
 ul.content-descr-list {
+	position: relative;
+	top: 0;
+	left: 0;
 	color: $accent;
 	text-transform: uppercase;
 	font-family: 'Verdana Medium';
 	font-size: calc(10px + 8 * (100vw / 1920));
 	line-height: 115%;
-	padding-left: 2%;
+	padding-left: 5%;
 
 }
 
@@ -149,10 +145,12 @@ li.descr-list-item span {
 	line-height: 115%;
 	padding: 2%;
 }
-
+.content-descr p{
+	padding: 1% 0;
+}
 .content-descr-span span {
 	position: absolute;
-	bottom: 6%;
+	bottom: 1%;
 	right: 4%;
 	color: $accent;
 	text-transform: uppercase;
@@ -161,3 +159,4 @@ li.descr-list-item span {
 	font-weight: 500;
 	line-height: 115%;
 }
+
