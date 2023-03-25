@@ -1,0 +1,34 @@
+.lunch-content{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-width: 1920px;
+}
+.lunch-content-title{
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.lunch-content-title h3{
+	position: inherit;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: calc(12px + 38 * (100vw / 1920));
+	line-height: 155%;
+	font-family: 'segoesc Bold';
+	font-weight: 700;
+	color: $accent;
+}
+.lunch-content-text{
+	text-align: center;
+	font-size: calc(10px + 28 * (100vw / 1920));
+	line-height: 225%;
+	font-family: 'segoesc Bold';
+	font-weight: 700;
+	color: $white;
+}
+
