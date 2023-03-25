@@ -31,4 +31,37 @@
 	font-weight: 700;
 	color: $white;
 }
+.lunch-content-images{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-width: 1920px;
+	display: flex;
 
+}
+.content-images{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 20%;
+}
+.content-images img{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 5px 5px  80px;
+}
+.content-images-descr{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: $accent;
+	text-transform: uppercase;
+	font-family: 'Verdana Medium';
+	font-size: calc(10px + 8 * (100vw / 1920));
+	line-height: 115%;
+	padding-bottom:  2%;
+	width: 100%;
+	text-align: center;
+}
