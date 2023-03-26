@@ -1,0 +1,30 @@
+.products-container {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 200px;
+}
+
+.products-title h2 {
+	position: inherit;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: calc(12px + 32 * (100vw / 1920));
+	line-height: 155%;
+	font-family: 'segoesc Bold';
+	font-weight: 700;
+	color: $accent;
+	padding-top: 4%;
+}
+
+.products-text p {
+	text-align: center;
+	font-size: calc(10px + 28 * (100vw / 1920));
+	line-height: 225%;
+	font-family: 'segoesc Bold';
+	font-weight: 700;
+	color: $white;
+}
