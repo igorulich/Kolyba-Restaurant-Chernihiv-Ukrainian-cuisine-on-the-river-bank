@@ -108,9 +108,11 @@
 	background-attachment: fixed;
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 	color: $white;
 	font-size: 60px;
 	align-items: center;
+	align-content: center;
 	position: relative;
 }
 .parallax .mask {
@@ -118,8 +120,43 @@
     width: 100%;
     height: 100%;
     background: $bgd;
-    z-index: 2;
+    z-index: ('mask');
 }
-.parallax h1 {
-    z-index: 3;
+.parallax h6 {
+    z-index: ('parallax');
+	font-size: calc(12px + 38 * (100vw / 1920));
+	line-height: 155%;
+	font-family: 'segoesc Bold';
+	font-weight: 700;
+	color: $accent;
+}
+.parallax p{
+	text-align: center;
+	font-size: calc(10px + 28 * (100vw / 1920));
+	line-height: 225%;
+	font-family: 'segoesc Bold';
+	font-weight: 700;
+	color: $accent;
+}
+ul.parallax-list{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 50%;
+	margin: 0 auto;
+}
+li.parallax-item{
+	color: $white;
+	text-transform: uppercase;
+	font-family: 'Verdana Medium';
+	font-size: calc(10px + 8 * (100vw / 1920));
+	line-height: 115%;
+	padding: 1% 0;
+}
+.parallax span{
+	color: $accent;
+	text-transform: uppercase;
+	font-family: 'Verdana Medium';
+	font-size: calc(10px + 8 * (100vw / 1920));
+	line-height: 115%;
 }
