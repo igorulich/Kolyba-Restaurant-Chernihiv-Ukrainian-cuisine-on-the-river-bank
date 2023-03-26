@@ -40,7 +40,7 @@
 	left: 0;
 	width: 100%;
 	display: flex;
-padding: 2% 0 5%;
+	padding: 2% 0 5%;
 }
 
 .products-content-title {
@@ -56,13 +56,15 @@ padding: 2% 0 5%;
 	text-align-last: left;
 	padding-bottom: 2%;
 }
-.card.products-card{
+
+.card.products-card {
 	background: transparent;
 	padding-bottom: 1%;
-	border:solid 0.4px $accent;
+	border: solid 0.4px $accent;
 	margin: 4px;
 }
-.card-title{
+
+.card-title {
 	position: relative;
 	top: 0;
 	left: 0;
@@ -74,36 +76,50 @@ padding: 2% 0 5%;
 	padding-bottom: 2%;
 	width: 100%;
 	text-align: center;
-	color:$white;
+	color: $white;
 }
-.card-text p{
+
+.card-text p {
 	position: relative;
 	top: 0;
 	left: 0;
 	padding: 1% 0;
 }
-.btn.btn-warning{
+
+.btn.btn-warning {
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	left: 0;
-	background:$accent;
+	background: $accent;
 }
-.box-content{
+
+.box-content {
 	position: relative;
 	top: 0;
 	left: 0;
 	max-width: 1920px;
 	width: 100%;
 }
+
 .parallax {
-    background-image: url(/dist/images/);
-    height: 500px;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    color: #ffffff;
-    font-size: 60px;
-    align-items: center;
-    position: relative;
+	background-image: url(/images/boxing-poster.webp);
+	height: 1080px;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	color: $white;
+	font-size: 60px;
+	align-items: center;
+	position: relative;
+}
+.parallax .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $bgd;
+    z-index: 2;
+}
+.parallax h1 {
+    z-index: 3;
 }
