@@ -89,3 +89,21 @@ padding: 2% 0 5%;
 	left: 0;
 	background:$accent;
 }
+.box-content{
+	position: relative;
+	top: 0;
+	left: 0;
+	max-width: 1920px;
+	width: 100%;
+}
+.parallax {
+    background-image: url(/dist/images/);
+    height: 500px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 60px;
+    align-items: center;
+    position: relative;
+}
