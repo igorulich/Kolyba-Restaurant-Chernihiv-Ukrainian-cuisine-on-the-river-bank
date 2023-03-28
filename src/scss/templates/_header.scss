@@ -77,7 +77,8 @@ header.header {
 		left: 0;
 		right: 0;
 		margin: 0 auto;
-		@include _767{
+
+		@include _767 {
 			display: none;
 		}
 	}
@@ -213,4 +214,54 @@ a.linck-item {
 	&:hover {
 		border-bottom: solid 2px $accent;
 	}
+}
+
+/* Гамбургер значок */
+.menu-btn {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 1%;
+	right: 3%;
+	z-index:z('btn');
+	overflow: hidden;
+	display: none;
+	@include _992{
+		display: block;
+	}
+}
+.menu-btn span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: $white;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+/* Меню, которое будет появляться */
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+  background: #FFEFBA;
+	transform: translateX(-100%);
+	transition: transform 0.5s;
+}
+.menu.active {
+	transform: translateX(0);
+}
+.menu li {
+	list-style-type: none;
 }
