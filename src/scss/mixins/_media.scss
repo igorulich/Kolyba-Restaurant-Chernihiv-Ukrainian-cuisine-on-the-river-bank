@@ -5,19 +5,19 @@
 }
 @mixin _992 {
   @media (max-width: 992px) {
-     @content
+     @content;
 
   }
 }
 @mixin _767{
   @media (max-width: 767px) {
-     @content
+     @content;
 
   }
 }
 @mixin _480 {
   @media (max-width: 480px) {
-     @content
+     @content;
 
   }
 }
