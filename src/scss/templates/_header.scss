@@ -5,7 +5,8 @@ header.header {
 	width: 100%;
 	max-width: 1920px;
 }
-.header img{
+
+.header img {
 	background-position: center, center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -14,6 +15,7 @@ header.header {
 	width: 100%;
 	max-width: 1920px;
 }
+
 .container-fluid {
 	width: 100%;
 	display: flex;
@@ -83,8 +85,9 @@ header.header {
 		margin: 0 auto;
 
 		@include _767 {
-			top: 1%;
-			@include _480{
+			top: 3%;
+
+			@include _320 {
 				display: none;
 			}
 		}
@@ -114,7 +117,8 @@ header.header {
 
 	@include _1200 {
 		padding: 0 15px 0 15px;
-		@include _767{
+
+		@include _767 {
 			padding: 0;
 			line-height: 100%;
 		}
@@ -157,7 +161,8 @@ a.telefon {
 
 	@include _1200 {
 		padding: 4px 0 4px;
-		@include _767{
+
+		@include _767 {
 			padding: 0;
 			line-height: 100%;
 		}
@@ -175,7 +180,8 @@ a.telefon {
 
 	@include _1200 {
 		padding: 4px 0 4px;
-		@include _767{
+
+		@include _767 {
 			padding: 0;
 			line-height: 100%;
 		}
