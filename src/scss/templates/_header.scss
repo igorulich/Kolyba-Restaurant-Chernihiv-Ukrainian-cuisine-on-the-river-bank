@@ -11,6 +11,8 @@ header.header {
 	background-size: cover;
 	border-bottom: 1px solid $bgd;
 	height: 100%;
+	width: 100%;
+	max-width: 1920px;
 }
 .container-fluid {
 	width: 100%;
