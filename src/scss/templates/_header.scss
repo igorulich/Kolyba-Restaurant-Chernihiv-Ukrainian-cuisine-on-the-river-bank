@@ -31,9 +31,7 @@ header.header {
 	height: 100vh;
 	overflow: hidden;
 	display: flex;
-
-
-	z-index: z('fon');
+	z-index: z('wrap');
 }
 
 .before,
@@ -240,18 +238,12 @@ a.linck-item {
 	}
 }
 
-.menu-btn {
-	position: absolute;
-	top: 1%;
-	right: 3%;
-	width: 45px;
-	height: 40px;
-}
+
 
 label.mobile-menu-btn {
-	position: relative;
-	top: 0;
-	left: 0;
+	position: absolute;
+	top: 3%;
+	right: 6%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -310,11 +302,13 @@ label.mobile-menu-btn {
 .mobile-menu-checkbox:checked~.mobile-menu-btn .mobile-menu-icon::before {
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
+	background: $accent;
 }
 
 .mobile-menu-checkbox:checked~.mobile-menu-btn .mobile-menu-icon::after {
 	transform: rotate(-45deg);
 	-webkit-transform: rotate(-45deg);
+	background: $accent;
 }
 
 .mobile-menu-checkbox:checked~.mobile-menu__btn .mobile-menu__icon {
