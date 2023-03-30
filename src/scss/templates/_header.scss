@@ -2,8 +2,12 @@ header.header {
 	position: relative;
 	top: 0;
 	left: 0;
+	max-height: 635px;
 	width: 100%;
 	max-width: 1920px;
+	@include _992{
+		height: 700px;
+		}
 }
 
 .header img {
@@ -11,9 +15,16 @@ header.header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-bottom: 1px solid $bgd;
-	height: 100%;
+	height:  86%;
 	width: 100%;
 	max-width: 1920px;
+	@include _992{
+		height:  60%;
+		@include _767{
+			height: 86%;
+		}
+
+	}
 }
 
 .container-fluid {

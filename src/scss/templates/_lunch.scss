@@ -1,17 +1,19 @@
-.lunch-content{
+.lunch-content {
 	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
 	max-width: 1920px;
 }
-.lunch-content-title{
+
+.lunch-content-title {
 	width: 100%;
 	position: relative;
 	top: 0;
 	left: 0;
 }
-.lunch-content-title h3{
+
+.lunch-content-title h3 {
 	position: inherit;
 	top: 0;
 	left: 0;
@@ -23,7 +25,8 @@
 	font-weight: 700;
 	color: $accent;
 }
-.lunch-content-text{
+
+.lunch-content-text {
 	text-align: center;
 	font-size: calc(10px + 28 * (100vw / 1920));
 	line-height: 225%;
@@ -31,28 +34,43 @@
 	font-weight: 700;
 	color: $white;
 }
-.lunch-content-images{
+
+.lunch-content-images {
 	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
 	max-width: 1920px;
 	display: flex;
+	flex-wrap: wrap;
 
 }
-.content-images{
+
+.content-images {
 	position: relative;
 	top: 0;
 	left: 0;
 	width: 20%;
+
+	@include _992{
+		width: 33%;
+		@include _767{
+			width: 50%;
+			@include _480{
+				width: 100%;
+			}
+		}
+	}
 }
-.content-images img{
+
+.content-images img {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 5px 5px  80px;
+	padding: 5px 5px 80px;
 }
-.content-images-descr{
+
+.content-images-descr {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -61,7 +79,16 @@
 	font-family: 'Verdana Medium';
 	font-size: calc(10px + 8 * (100vw / 1920));
 	line-height: 115%;
-	padding-bottom:  2%;
+	padding-bottom: 20px;
 	width: 100%;
 	text-align: center;
+	@include _992{
+		padding-bottom: 18px;
+		@include _767{
+			padding-bottom: 12px;
+			@include _480{
+				padding-bottom: 8px;
+			}
+		}
+	}
 }

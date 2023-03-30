@@ -11,11 +11,14 @@ section.content {
 	left: 0;
 	width: 100%;
 	display: block;
-
+padding-top: 16%;
+@include _992{
+	padding-top: 0;
+}
 }
 
 .content__title h2 {
-	position: inherit;
+	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -63,7 +66,24 @@ display: flex;
 }
 
 .slider-content,
-.slider-content-three,
+.slider-content-three{
+	position: relative;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row;
+	flex-direction: row;
+	padding-bottom: 3%;
+	@include  _992{
+			flex-direction: column;
+			padding-bottom: 3%;
+			align-content: center;
+			justify-content: center;
+			align-items: center;
+
+	}
+}
+
 .slider-content-two{
 	position: relative;
 	top: 0;
@@ -71,7 +91,15 @@ display: flex;
 	display: flex;
 	flex-direction: row;
 	flex-direction: row;
-	padding-bottom: 3%
+	padding-bottom: 3%;
+	@include  _992{
+			flex-direction: column-reverse;
+			padding-bottom: 3%;
+			align-content: center;
+			justify-content: center;
+			align-items: center;
+
+	}
 }
 
 .slider-content-images {
@@ -80,7 +108,10 @@ display: flex;
 	left: 0;
 	height: auto;
 	width: 50%;
-
+@include _992{
+	width: 100%;
+	padding-bottom: 22px;
+}
 }
 
 img.content-images {
@@ -100,6 +131,9 @@ img.content-images {
 	justify-content: space-around;
 	width: 50%;
 	color: $white;
+	@include _992{
+		width: 100%;
+	}
 }
 
 ul.content-descr-list {
