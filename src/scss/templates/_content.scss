@@ -176,14 +176,14 @@ li.descr-list-item span {
 	font-family: 'segoesc Regular';
 	font-size: calc(10px + 10 * (100vw / 1920));
 	line-height: 115%;
-	padding: 2%;
+	padding: 6%;
 }
 .content-descr p{
 	padding: 1% 0;
 }
 .content-descr-span span {
 	position: absolute;
-	bottom: 1%;
+	bottom: 0;
 	right: 4%;
 	color: $accent;
 	text-transform: uppercase;

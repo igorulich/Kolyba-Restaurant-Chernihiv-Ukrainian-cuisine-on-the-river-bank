@@ -1,25 +1,35 @@
-.bringing-container{
+.bringing-container {
 	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-align-content: center;
-justify-content: center;
-height: 600px;
-overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	height: 600px;
+	overflow: hidden;
+
+	@include _767 {
+		height: 280px;
+
+		@include _480 {
+			height: 230px;
+		}
+	}
 }
-.bringing-container img{
+
+.bringing-container img {
 	position: absolute;
 	top: 0;
 	left: 0;
-background-position:center;
-background-repeat:no-repeat;
-background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-.bringing-title{
+
+.bringing-title {
 	position: relative;
 	top: 0;
 	color: $white;
@@ -29,27 +39,28 @@ background-size:cover;
 	line-height: 115%;
 	padding: 1% 0;
 }
-.bringing-linck a{
+
+.bringing-linck a {
 	position: relative;
 	top: 0;
-	color:$white;
+	color: $white;
 	text-decoration: none;
 	font-family: 'Verdana Medium';
 	font-weight: 500;
-	color:$white;
+	color: $white;
 	font-size: calc(19px + 18 * (100vw / 1920));
-line-height: 115%;
-cursor: pointer;
-border-bottom:solid 2px  transparent;
-transition: all 2s linear;
+	line-height: 115%;
+	cursor: pointer;
+	border-bottom: solid 2px transparent;
+	transition: all 2s linear;
 
-&:hover{
-	border-bottom:solid 2px $accent;
-	color:$accent;
-}
+	&:hover {
+		border-bottom: solid 2px $accent;
+		color: $accent;
+	}
 }
 
-.bringing-text{
+.bringing-text {
 	position: relative;
 	top: 0;
 	color: $white;
