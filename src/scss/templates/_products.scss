@@ -35,12 +35,20 @@
 }
 
 .products-content {
-	position: relative;
+	position: inherit;
 	top: 0;
 	left: 0;
 	width: 100%;
 	display: flex;
+	align-items: center;
+	justify-content: stretch;
+
 	padding: 2% 0 5%;
+	@include _992{
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content:space-around
+	}
 
 }
 
@@ -59,13 +67,20 @@
 }
 
 .card.products-card {
+	position: relative;
+	top: 0;
+	left: 0;
 	background: transparent;
 	padding-bottom: 1%;
 	border: solid 0.4px $accent;
 	margin: 4px;
 
-}
+.card-body{
+	position: relative;
+	top: 0;
+	left: 0;
 
+}
 .card-title {
 	position: relative;
 	top: 0;
@@ -81,13 +96,25 @@
 	color: $white;
 }
 
-.card-text p {
+p.card-text{
 	position: relative;
 	top: 0;
 	left: 0;
-	padding: 1% 0;
+	padding: 15px 0 35px;
+	color:$accent;
+	font-family: "Verdana Medium";
+	font-size: calc(10px + 0.416667vw);
 }
-
+span.card-span{
+	position: absolute;
+	bottom: 13%;
+	right: 6%;
+	padding: 1% 0  9%;
+	color:$white;
+	font-family: "segoesc Bold";
+	font-weight: 700;
+	font-size: calc(10px + 0.416667vw);
+}
 .btn.btn-warning {
 	position: absolute;
 	bottom: 0;

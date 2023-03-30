@@ -15,7 +15,7 @@ header.header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-bottom: 1px solid $bgd;
-	height:  86%;
+	height:  100%;
 	width: 100%;
 	max-width: 1920px;
 	@include _992{
@@ -83,20 +83,20 @@ header.header {
 
 .header__logo {
 	position: relative;
-	top: 1%;
+	top: 3%;
 	left: 2%;
 	max-width: 400px;
 	display: flexbox;
 
 	@include _1200 {
 		position: absolute;
-		top: 7%;
+		top: 33%;
 		left: 0;
 		right: 0;
 		margin: 0 auto;
 
 		@include _767 {
-			top: 3%;
+			top: 27%;
 
 			@include _320 {
 				display: none;
