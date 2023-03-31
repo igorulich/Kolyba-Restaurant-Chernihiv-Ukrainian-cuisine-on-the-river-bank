@@ -99,7 +99,7 @@ header.header {
 		margin: 0 auto;
 
 		@include _767 {
-			top: 27%;
+			top: 17%;
 
 			@include _320 {
 				display: none;
@@ -170,17 +170,7 @@ a.telefon {
 	color: $white;
 	font-size: calc(10px + 18 * (100vw / 1920));
 	line-height: 115%;
-	padding: 14px 0 24px;
 	white-space: nowrap;
-
-	@include _1200 {
-		padding: 4px 0 4px;
-
-		@include _767 {
-			padding: 0;
-			line-height: 100%;
-		}
-	}
 }
 
 .header__logo-descr span {
@@ -191,16 +181,9 @@ a.telefon {
 	line-height: 115%;
 	padding: 14px 0 24px;
 	color: $accent;
-
-	@include _1200 {
-		padding: 4px 0 4px;
-
-		@include _767 {
-			padding: 0;
-			line-height: 100%;
-		}
-	}
+padding: 20px 0;
 }
+
 
 a.mail {
 	color: $white;

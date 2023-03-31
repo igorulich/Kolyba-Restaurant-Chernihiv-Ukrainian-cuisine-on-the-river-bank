@@ -44,7 +44,14 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	@include _992 {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: stretch;
+		align-content: center;
+			align-content: center;
 
+	}
 }
 
 .content-images {
