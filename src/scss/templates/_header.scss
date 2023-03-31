@@ -25,7 +25,8 @@ header.header {
 
 		@include _767 {
 			height: 86%;
-			@include _480{
+
+			@include _480 {
 				height: 100%;
 			}
 		}
@@ -264,7 +265,7 @@ a.linck-item {
 
 
 label.mobile-menu-btn {
-	position: absolute;
+	position: fixed;
 	top: 3%;
 	right: 6%;
 	display: flex;
