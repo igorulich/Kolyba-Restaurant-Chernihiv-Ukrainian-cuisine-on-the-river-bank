@@ -13,11 +13,12 @@
 
 	@include _767 {
 		height: 280px;
-
-		@include _480 {
-			height: 230px;
-		}
 	}
+
+	@include _480 {
+		height: 230px;
+	}
+
 }
 
 .bringing-container img {

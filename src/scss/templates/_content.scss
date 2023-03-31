@@ -14,10 +14,10 @@ section.content {
 padding-top: 16%;
 @include _992{
 	padding-top: 0;
+}
 	@include _480{
 		padding-top: 100px;
 	}
-}
 }
 
 .content__title h2 {
@@ -83,7 +83,6 @@ display: flex;
 			align-content: center;
 			justify-content: center;
 			align-items: center;
-
 	}
 }
 
@@ -101,7 +100,6 @@ display: flex;
 			align-content: center;
 			justify-content: center;
 			align-items: center;
-
 	}
 }
 

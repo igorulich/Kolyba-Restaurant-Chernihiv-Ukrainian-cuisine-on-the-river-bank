@@ -44,12 +44,13 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+
 	@include _992 {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: stretch;
 		align-content: center;
-			align-content: center;
+		align-content: center;
 
 	}
 }
@@ -60,14 +61,16 @@
 	left: 0;
 	width: 20%;
 
-	@include _992{
+	@include _992 {
 		width: 33%;
-		@include _767{
-			width: 50%;
-			@include _480{
-				width: 100%;
-			}
-		}
+	}
+
+	@include _767 {
+		width: 50%;
+	}
+
+	@include _480 {
+		width: 100%;
 	}
 }
 
@@ -90,13 +93,16 @@
 	padding-bottom: 20px;
 	width: 100%;
 	text-align: center;
-	@include _992{
+
+	@include _992 {
 		padding-bottom: 18px;
-		@include _767{
-			padding-bottom: 12px;
-			@include _480{
-				padding-bottom: 6px;
-			}
-		}
+	}
+
+	@include _767 {
+		padding-bottom: 12px;
+	}
+
+	@include _480 {
+		padding-bottom: 6px;
 	}
 }

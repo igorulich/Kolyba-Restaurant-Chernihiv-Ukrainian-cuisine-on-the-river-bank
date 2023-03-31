@@ -82,12 +82,10 @@ a.descr-info-tel{
 	line-height: 115%;
 	padding: 2% 0 02% 0;
 	text-decoration: none;
-
 	&:hover{
 		color:$white;
 		cursor: pointer;
 	}
-
 }
 .worck-time{
 	font-size: calc(10px + 16 * (100vw / 1920));
