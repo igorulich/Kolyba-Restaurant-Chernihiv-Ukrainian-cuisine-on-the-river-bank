@@ -140,7 +140,6 @@ a.telefon {
 	position: relative;
 	top: 0;
 	left: 0;
-	color: $white;
 	text-decoration: none;
 	font-family: 'Verdana Medium';
 	font-weight: 500;
@@ -173,22 +172,10 @@ a.telefon {
 .header__logo-descr span {
 	font-family: 'Verdana Medium';
 	font-weight: 500;
-	color: $white;
 	font-size: calc(20px + 18 * (100vw / 1920));
 	line-height: 115%;
 	color: $accent;
 	padding: 15px 0;
-}
-
-
-a.mail {
-	color: $white;
-	text-decoration: none;
-	font-family: 'Verdana Medium';
-	font-weight: 500;
-	color: $white;
-	font-size: calc(19px + 18 * (100vw / 1920));
-	line-height: 115%
 }
 
 nav.nav-menu {

@@ -75,7 +75,6 @@ display: flex;
 	left: 0;
 	display: flex;
 	flex-direction: row;
-	flex-direction: row;
 	padding-bottom: 3%;
 	@include  _992{
 			flex-direction: column;
@@ -91,7 +90,6 @@ display: flex;
 	top: 0;
 	left: 0;
 	display: flex;
-	flex-direction: row;
 	flex-direction: row;
 	padding-bottom: 3%;
 	@include  _992{
@@ -122,7 +120,6 @@ img.content-images {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-
 }
 
 .slider-content-descr {
@@ -147,7 +144,6 @@ ul.content-descr-list {
 	font-size: calc(10px + 8 * (100vw / 1920));
 	line-height: 115%;
 	padding-left: 5%;
-
 }
 
 li.descr-list-item {
