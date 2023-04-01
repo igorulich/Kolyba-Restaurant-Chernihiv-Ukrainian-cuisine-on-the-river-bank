@@ -53,7 +53,7 @@
 		flex-wrap: wrap;
 		justify-content: stretch;
 		align-content: center;
-			align-content: center;
+		align-content: center;
 
 	}
 }
@@ -81,7 +81,7 @@
 	border: solid 0.4px $accent;
 	margin: 4px;
 	max-height: 540px;
-min-width: 140px;
+	min-width: 140px;
 }
 
 .card-body {
@@ -113,6 +113,8 @@ p.card-text {
 	color: $accent;
 	font-family: "Verdana Medium";
 	font-size: calc(10px + 0.416667vw);
+	padding-bottom: 9%;
+
 }
 
 span.card-span {
@@ -155,6 +157,10 @@ span.card-span {
 	align-items: center;
 	align-content: center;
 	position: relative;
+
+	@include _480 {
+		height: 780px
+	}
 }
 
 .parallax .mask {
@@ -166,6 +172,9 @@ span.card-span {
 }
 
 .parallax h6 {
+	position: relative;
+	top: 0;
+	left: 0;
 	z-index: z('parallax');
 	font-size: calc(12px + 38 * (100vw / 1920));
 	line-height: 155%;
@@ -187,7 +196,7 @@ ul.parallax-list {
 	position: relative;
 	top: 0;
 	left: 0;
-	width: 50%;
+	width: 95%;
 	margin: 0 auto;
 }
 
