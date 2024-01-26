@@ -7,7 +7,10 @@ header.header {
 	max-width: 1920px;
 }
 
-.header img {
+.before img {
+	position: absolute;
+	top: 0;
+	left: 0;
 	background-position: center, center;
 	background-repeat: no-repeat;
 	background-size: cover;
