@@ -4,8 +4,7 @@
 	"description": "main new version gulp actual on 20.01.2023",
 	"main": "index.js",
 	"scripts": {
-		"gulp": " gulp  --mode=development",
-		"build": "gulp  --devtool --mode=production"
+		"gulp": " gulp"
 	},
 	"author": "Igor Ulich ",
 	"license": "ISC",
