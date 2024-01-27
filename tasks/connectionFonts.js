@@ -1,6 +1,6 @@
 "use strict";
-import { config } from "../configModul ";/*підключення файла з конфігураціями*/
-import { readFileSync, writeFile, readdir, appendFile } from "fs";/*імпортуемо бібліотеку fs */
+import { config } from "../configModul ";
+import { readFileSync, writeFile, readdir, appendFile } from "fs";
 const checkWeight = (fontname) => {
 	let weight = 400;
 	switch (true) {

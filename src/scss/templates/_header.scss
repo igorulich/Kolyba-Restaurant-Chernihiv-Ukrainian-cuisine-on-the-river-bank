@@ -7,30 +7,9 @@ header.header {
 	max-width: 1920px;
 }
 
-.before img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-position: center, center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	border-bottom: 1px solid $bgd;
-	height: 100%;
-	width: 100%;
-	max-width: 1920px;
 
-	@include _992 {
-		height: 60%;
-	}
 
-	@include _767 {
-		height: 86%;
-	}
 
-	@include _480 {
-		height: 100%;
-	}
-}
 
 .container-fluid {
 	width: 100%;
@@ -49,7 +28,7 @@ header.header {
 	height: 100vh;
 	overflow: hidden;
 	display: flex;
-	z-index: z('wrap');
+	z-index: z("wrap");
 }
 
 .before,
@@ -59,13 +38,33 @@ header.header {
 	left: 0;
 	width: 100%;
 	height: 100%;
-
 }
+.before img {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	max-width: 1920px;
+	background-position: center, center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom: 1px solid $bgd;
+	@include _992 {
+		height: 60%;
+	}
 
+	@include _767 {
+		height: 86%;
+	}
+
+	@include _480 {
+		height: 100%;
+	}
+}
 .after.after1 img {
 	position: absolute;
-	z-index: z('img');
-
+	z-index: z("img");
 }
 
 .after1 {
@@ -100,18 +99,18 @@ header.header {
 		right: 0;
 		margin: 0 auto;
 	}
-		@include _767 {
-			top: 17%;
-		}
-			@include _320 {
-				display: none;
-			}
-		}
+	@include _767 {
+		top: 17%;
+	}
+	@include _320 {
+		display: none;
+	}
+}
 
 .header__logo h1 {
 	font-size: calc(25px + 63 * (100vw / 1920));
 	line-height: 155%;
-	font-family: 'segoesc Bold';
+	font-family: "segoesc Bold";
 	font-weight: 700;
 	color: $accent;
 	width: 100%;
@@ -122,7 +121,7 @@ header.header {
 	position: relative;
 	top: 0;
 	left: 0;
-	font-family: 'segoesc Regular';
+	font-family: "segoesc Regular";
 	font-weight: 400;
 	color: $white;
 	font-size: calc(19px + 18 * (100vw / 1920));
@@ -132,19 +131,18 @@ header.header {
 	@include _1200 {
 		padding: 0 15px 0 15px;
 	}
-		@include _767 {
-			padding:  0 0 0 5px;
-			line-height: 180%;
-		}
+	@include _767 {
+		padding: 0 0 0 5px;
+		line-height: 180%;
 	}
-
+}
 
 a.telefon {
 	position: relative;
 	top: 0;
 	left: 0;
 	text-decoration: none;
-	font-family: 'Verdana Medium';
+	font-family: "Verdana Medium";
 	font-weight: 500;
 	color: $white;
 	font-size: calc(11px + 26 * (100vw / 1920));
@@ -160,7 +158,7 @@ a.telefon {
 }
 
 .header__logo-descr {
-	font-family: 'Verdana Regular';
+	font-family: "Verdana Regular";
 	font-weight: 400;
 	display: flex;
 	flex-direction: column;
@@ -173,7 +171,7 @@ a.telefon {
 }
 
 .header__logo-descr span {
-	font-family: 'Verdana Medium';
+	font-family: "Verdana Medium";
 	font-weight: 500;
 	font-size: calc(20px + 18 * (100vw / 1920));
 	line-height: 115%;
@@ -191,10 +189,10 @@ nav.nav-menu {
 	@include _1200 {
 		height: 30px;
 	}
-		@include _992 {
-			display: none;
-		}
+	@include _992 {
+		display: none;
 	}
+}
 
 ul.menu-list {
 	position: inherit;
@@ -213,7 +211,7 @@ a.linck-item {
 	text-decoration: none;
 	color: $accent;
 	text-transform: uppercase;
-	font-family: 'Verdana Medium';
+	font-family: "Verdana Medium";
 	font-size: calc(10px + 8 * (100vw / 1920));
 	line-height: 115%;
 	border-bottom: solid 2px transparent;
@@ -223,8 +221,6 @@ a.linck-item {
 		border-bottom: solid 2px $accent;
 	}
 }
-
-
 
 label.mobile-menu-btn {
 	position: fixed;
@@ -238,12 +234,11 @@ label.mobile-menu-btn {
 	cursor: pointer;
 	transition: 0.4s;
 	display: block;
-	z-index: z('btn');
-
+	z-index: z("btn");
 }
 
 /* Гамбургер значок */
-.mobile-menu-checkbox:checked~.mobile-menu-btn .mobile-menu-icon {
+.mobile-menu-checkbox:checked ~ .mobile-menu-btn .mobile-menu-icon {
 	background: 0 0;
 }
 
@@ -254,12 +249,11 @@ label.mobile-menu-btn {
 	width: 90%;
 	height: 2px;
 	transition: 0.4s;
-	z-index: z('btn');
+	z-index: z("btn");
 	display: none;
 
 	@include _992 {
 		display: block;
-
 	}
 }
 
@@ -285,19 +279,19 @@ label.mobile-menu-btn {
 	transition: 0.4s;
 }
 
-.mobile-menu-checkbox:checked~.mobile-menu-btn .mobile-menu-icon::before {
+.mobile-menu-checkbox:checked ~ .mobile-menu-btn .mobile-menu-icon::before {
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 	background: $accent;
 }
 
-.mobile-menu-checkbox:checked~.mobile-menu-btn .mobile-menu-icon::after {
+.mobile-menu-checkbox:checked ~ .mobile-menu-btn .mobile-menu-icon::after {
 	transform: rotate(-45deg);
 	-webkit-transform: rotate(-45deg);
 	background: $accent;
 }
 
-.mobile-menu-checkbox:checked~.mobile-menu__btn .mobile-menu__icon {
+.mobile-menu-checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon {
 	background: 0 0;
 }
 

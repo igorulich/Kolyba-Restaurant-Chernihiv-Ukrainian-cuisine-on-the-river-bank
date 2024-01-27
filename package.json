@@ -4,7 +4,8 @@
 	"description": "main new version gulp actual on 20.01.2023",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"gulp": " gulp  --mode=development",
+		"build": "gulp  --devtool --mode=production"
 	},
 	"author": "Igor Ulich ",
 	"license": "ISC",
@@ -50,6 +51,7 @@
 		"require-dir": "^1.2.0",
 		"sass": "^1.52.2",
 		"webpack": "^5.72.1",
+		"webpack-cli": "^5.1.4",
 		"webpack-stream": "^7.0.0"
 	},
 	"dependencies": {

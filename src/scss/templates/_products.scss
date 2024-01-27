@@ -152,6 +152,7 @@ span.card-span {
 }
 
 .parallax {
+		position: relative;
 	height: 1080px;
 	background-attachment: fixed;
 	display: flex;
@@ -161,8 +162,6 @@ span.card-span {
 	font-size: 60px;
 	align-items: center;
 	align-content: center;
-	position: relative;
-
 	@include _480 {
 		height: 780px
 	}
